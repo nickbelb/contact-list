@@ -8,6 +8,8 @@
     --white-bg-colour:#fff;
     --inputs-bg-colour:#2c2c3a;
     --btn-bg-colour:#008b8b;
+    --green-colour:#32cd32;
+    --red-colour:#ff051e;
     --font-size:17px;
 }
 
@@ -41,10 +43,17 @@ body{
     justify-content: space-between;
 }
 
+.flex-grid{
+    display: grid;
+    padding: 20px;
+    grid-template-columns: repeat(3,340px);
+    grid-template-rows: repeat(5,115px);
+    gap: 10px;
+}
+
 form{
     margin: 20px 0px 20px 0px;
 }
-
 
 input[type='text']{
     height: 45px;
@@ -67,13 +76,7 @@ input[type='button']{
     font-size: var(--font-size);
 }
 
-.flex-grid{
-    display: grid;
-    padding: 20px;
-    grid-template-columns: repeat(3,340px);
-    grid-template-rows: repeat(5,115px);
-    gap: 10px;
-}
+
 
 .contact-list-box{
     width: 100%;
@@ -85,7 +88,6 @@ input[type='button']{
     background-color: var(--inputs-bg-colour);
     padding:15px;
     border-radius: 5px;
-    
 }
 
 .contact-details p{
@@ -103,7 +105,7 @@ input[type='button']{
     text-align: center;
     border-radius: 50%;
     cursor: pointer;
-    color: #ff051e;
+    color: var(--red-colour);
     background-color: #ffc9cf;
 }
 
@@ -134,14 +136,13 @@ input[type='button']{
 }
 
 .message{
-    color:#ff051e;
+    color:var(--red-colour);
 }
 
 .confirmation-box .options i{
     font-size: 40px;
     cursor: pointer;
 }
-
 
 .visible{
     visibility: visible;
@@ -155,8 +156,14 @@ input[type='button']{
 .opacity-visible{
     opacity: 0.5;
 }
-  
 
+.yes-option{
+    color:var(--green-colour);
+}
+
+.no-option{
+    color: var(--red-colour);
+}
 
 
 
